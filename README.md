@@ -4,7 +4,7 @@ This is a port of John Papa's popular [Hot Towel Angular SPA Template](https://g
 
 ##What is this?
 
-**This is intentionally a "bare bones" port.**  It's essentially the same code as John's - just with added typings (and yes it is ```noImplicitAny``` compliant).
+**This is intentionally a "bare bones" port.**  It's essentially the same code as John's - just with added type annotations (and yes it is ```noImplicitAny``` compliant).
 
 You could, if you wanted to, take this much further.  You could start using a whole host of TypeScripts functionality: modules / classes / arrow functions... the whole shebang.  This is deliberately not that.
 
@@ -42,7 +42,7 @@ This was necessary as TypeScript insists that the array ```filter``` predicate r
 ```
 
 ##If you want to use this
-Then simply follow the instructions for installing [HotTowel-Angular](https://github.com/johnpapa/HotTowel-Angular) and then drop this repo's app folder over the one just created when HotTowel-Angular was installed.
+Then simply follow the instructions for installing [HotTowel-Angular](https://github.com/johnpapa/HotTowel-Angular) and then drop this repo's app folder over the one just created when HotTowel-Angular was installed.  If you're using Visual Studio then make sure that you include the new TS files into your project and give them the ```BuildAction``` of ```TypeScriptCompile```.  
 
 You'll need the following NuGet packages for the relevant DefinitelyTyped Typings:
 
@@ -52,7 +52,9 @@ You'll need the following NuGet packages for the relevant DefinitelyTyped Typing
     Install-Package spin.TypeScript.DefinitelyTyped
     Install-Package toastr.TypeScript.DefinitelyTyped
 
-And you're good to go.  If you're interested in the specific versions that I used then you can find them in the packages.config of this repo.
+And you're good to go.  If you're not using Visual Studio then you may need to add in some ```<reference path="angular.d.ts" />``` etc. statements to the TypeScript files as well.  
+
+If you're interested in the specific versions of the typings that I used then you can find them in the ```packages.config``` of this repo.
 
 ##Thanks
 To John Papa for creating HotTowel-Angular.  Much love.  
