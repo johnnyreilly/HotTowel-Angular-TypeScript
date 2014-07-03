@@ -27,7 +27,7 @@ to this:
     return (r.config.settings && r.config.settings.nav) ? true : false;
 ```
 
-This was necessary as TypeScript insists that the array ```filter``` predicate returns a ```boolean```.  John's original method returns a number (```nav```'s number to be clear) which actually seems to work fine. My assumption is that JavaScript's filter method is happy with a truth-y / false-y test which John's implementation would satisfy. 
+This was necessary as TypeScript insists that the array ```filter``` predicate returns a ```boolean```.  John's original method returns a number (```nav```'s value to be clear) which actually seems to work fine. My assumption is that JavaScript's filter method is happy with a truth-y / false-y test which John's implementation would satisfy. 
 
 ###2. common.js's ```$broadcast``` 
 ...had to be given a rest parameter to satisfy the TS compiler.  John's original method exposed no parameters as it just forwards on whatever arguments are passed to it.  This means that ```$broadcast``` has a bit of unused code in the head of the generated method:
