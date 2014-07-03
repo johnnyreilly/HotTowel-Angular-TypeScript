@@ -5,7 +5,7 @@
         controllerActivateSuccess: string;
         spinnerToggle: string;
     };
-    imageSettings: {
+    imageSettings?: {
         imageBasePath: string;
         unknownPersonImageSource: string;
     }
