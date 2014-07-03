@@ -4,11 +4,9 @@ This is a port of John Papa's popular [Hot Towel Angular SPA Template](https://g
 
 ##What is this?
 
-**This is intentionally a "bare bones" port.**  It's essentially the same code as John's - just with added type annotations (and yes it is ```noImplicitAny``` compliant).
+**This is intentionally a "bare bones" port of HotTowel-Angular from JavaScript to TypeScript.**  It's essentially the same code as John's - just with added type annotations (and yes it is ```noImplicitAny``` compliant).
 
-You could, if you wanted to, take this much further.  You could start using a whole host of TypeScripts functionality: modules / classes / arrow functions... the whole shebang.  This is deliberately not that.
-
-I didn't want to scare your horses, I just wanted you to see how easy it is to move from JS to TS.  And I'm standing on top of the giant that is [John Papa](https://github.com/johnpapa) for that purpose.
+You could, if you wanted to, go much further.  You could start using a whole host of TypeScripts functionality: modules / classes / arrow functions... the whole shebang.  This is deliberately not that; I didn't want to scare your horses... I wanted you to see how easy it is to move from JS to TS.  And I'm standing on the shoulders of that great giant [John Papa](https://github.com/johnpapa) for that purpose.
 
 ##Contents
 
