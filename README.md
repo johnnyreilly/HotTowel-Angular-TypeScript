@@ -46,11 +46,11 @@ Then simply follow the instructions for installing [HotTowel-Angular](https://gi
 
 You'll need the following NuGet packages for the relevant DefinitelyTyped Typings:
 
-> Install-Package angularjs.TypeScript.DefinitelyTyped
-> Install-Package angular-ui-bootstrap.TypeScript.DefinitelyTyped
-> Install-Package jquery.TypeScript.DefinitelyTyped
-> Install-Package spin.TypeScript.DefinitelyTyped
-> Install-Package toastr.TypeScript.DefinitelyTyped
+    Install-Package angularjs.TypeScript.DefinitelyTyped
+    Install-Package angular-ui-bootstrap.TypeScript.DefinitelyTyped
+    Install-Package jquery.TypeScript.DefinitelyTyped
+    Install-Package spin.TypeScript.DefinitelyTyped
+    Install-Package toastr.TypeScript.DefinitelyTyped
 
 And you're good to go.  If you're interested in the specific versions that I used then you can find them in the packages.config of this repo.
 
