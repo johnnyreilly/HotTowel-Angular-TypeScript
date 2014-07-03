@@ -30,7 +30,7 @@ interface common {
             //spinnerToggleEvent: ''
         };
 
-        this.$get = function () {
+        this.$get = function (): commonConfig {
             return {
                 config: this.config
             };
