@@ -14,14 +14,10 @@
 }
 
 interface commonConfig {
-    appErrorPrefix: string;
-    docTitle: string;
     config: {
         controllerActivateSuccessEvent: string;
         spinnerToggleEvent: string;
     };
-    remoteServiceName: string;
-    version: string;
 }
 
 (function () {
