@@ -1,4 +1,9 @@
-﻿declare module ng.route {
+﻿interface sidebarVm {
+    isCurrent: (route: configRoute) => string;
+    navRoutes: configRoute[];
+}
+
+declare module ng.route {
     //Extend ICurrentRoute to incorporate configRouteConfig
     interface ICurrentRoute extends configRouteConfig {
     }
@@ -12,7 +17,7 @@
         ['$route', 'config', 'routes', sidebar]);
 
     function sidebar($route: ng.route.IRouteService, config: config, routes: configRoute[]) {
-        var vm = this;
+        var vm: sidebarVm = this;
 
         vm.isCurrent = isCurrent;
 
