@@ -1,4 +1,14 @@
-﻿(function () {
+﻿interface dashboardVm {
+    messageCount: number;
+    news: {
+        title: string;
+        description: string;
+    }
+    people: person[];
+    title: string;
+}
+
+(function () {
     'use strict';
     var controllerId = 'dashboard';
     angular.module('app').controller(controllerId, ['common', 'datacontext', dashboard]);
@@ -7,10 +17,10 @@
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
 
-        var vm = this;
+        var vm: dashboardVm = this;
         vm.news = {
-            title: 'Hot Towel Angular',
-            description: 'Hot Towel Angular is a SPA template for Angular developers.'
+            title: 'Proverbs',
+            description: 'The Wisdom of Socrates Aruldas (and The Team)'
         };
         vm.messageCount = 0;
         vm.people = [];
