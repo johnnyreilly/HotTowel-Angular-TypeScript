@@ -19,8 +19,8 @@
 
         var vm: dashboardVm = this;
         vm.news = {
-            title: 'Proverbs',
-            description: 'The Wisdom of Socrates Aruldas (and The Team)'
+            title: 'Hot Towel Angular',
+            description: 'Hot Towel Angular is a SPA template for Angular developers.'
         };
         vm.messageCount = 0;
         vm.people = [];
