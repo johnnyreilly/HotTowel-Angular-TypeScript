@@ -1,5 +1,5 @@
 ﻿interface ccSpinnerWindowService extends ng.IWindowService {
-    Spinner: Spinner;
+    Spinner: typeof Spinner;
 }
 
 interface ccSpinnerScope extends ng.IScope {
@@ -185,7 +185,7 @@ interface ccSpinnerAttributes extends ng.IAttributes {
                 if (scope.spinner) {
                     scope.spinner.stop();
                 }
-                scope.spinner = new (<any>$window.Spinner)(options);
+                scope.spinner = new $window.Spinner(options);
                 scope.spinner.spin(element[0]);
             }, true);
         }
